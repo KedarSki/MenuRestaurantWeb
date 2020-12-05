@@ -1,0 +1,53 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Application</title>
+    <link rel="stylesheet" href="./MenuApplication.css">
+    <script type="text/javascript" src="./MenuApplication.js"></script>
+</head>
+
+<body background="./background-image.jpg">
+    <div class="container">
+        <header>
+            <img src="./header.jpg" alt="">
+        </header>
+    </div>
+    <div id="menu">
+        <p>PIZZA</p>
+        <p>1.MARGHERITA - Tomato sauce, cheese. $10,00 (Vegetarian) <button value="+" onclick="addItemMar()">Add to Cart</button> </p>
+        <p>2.HAWAIIAN - Tomato sauce, cheese, pinapple, ham. $12,00 <button onclick="addItemHaw()">Add to Cart</button> </p>
+        <p>3.VEGGIE - Tomato sauce, fresh spinach, sweetcorn, mixed peppers, red onions &amp; mushrooms. $15,00 <button onclick="addItemVeg()">Add to Cart</button></p>
+        <p>4.FUNGHI - Tomato sauce, cheese, mushrooms. $15,00 <button onclick="addItemFun()">Add to Cart</button> </p>
+        <p>5.SALAMI - Tomato sauce, cheese, double salami. $16,00 <button onclick="addItemSal()">Add to Cart</button> </p>
+        <p>6.CHICKEN SUPREME - Tomato sauce, cheese, chicken breast, mushrooms, red fresh peppers. $19,00 <button onclick="addItemChi()">Add to Cart</button> </p>
+    </div>
+    <div id="order">
+        <p>Cart</p>
+        <form>
+            <select id="items" size="10">
+                <option id="current"> Current Order</option>
+            </select>
+        </form>
+        <p>Add Delivery? <button onclick="addDelivery()">Yes</button></p>
+        <form> <select id="price" size="10">
+                <option>Unit Price $</option>
+            </select>
+            <h2>Total: <span id="total"></span> <br>
+                <button onclick="clearAll()">Clear All</button>
+
+                <div><button>Submit Order</button></div>
+            </h2>
+        </form>
+    </div>
+
+    <div class="footer">
+        <p> * Please be advised that all Pizzas are in the same size of 32cm </p>
+        <p> ** Delivery Cost is $5 </p>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+body {
+    background-size: auto;
+}
+
+.container {
+    text-align-last: center;
+}
+
+#menu {
+    color: white;
+    position: absolute;
+    left: 5%;
+    margin-right: 370px;
+    margin-bottom: 5%
+}
+
+#order {
+    color: white;
+    align-self: auto;
+    position: absolute;
+    top: 280px;
+    right: 5%;
+    margin: right;
+    margin-bottom: 5px;
+}
+
+#current {
+    color: #f63126;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+}
+
+@media (min-width: 1100px) {
+    .container {
+        width: 1050px;
+    }
+    #menu {
+        width: 65%;
+    }
+    #order {
+        width: 30%;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: auto;
+    }
+    #menu {
+        width: auto;
+    }
+    #order {
+        width: auto;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: auto;
+    }
+    #menu {
+        width: auto;
+    }
+    #order {
+        width: auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        width: auto;
+    }
+    #menu {
+        width: auto;
+    }
+    #order {
+        width: auto;
+    }
+}
