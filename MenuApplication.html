@@ -16,12 +16,12 @@
     </div>
     <div id="menu">
         <p>PIZZA</p>
-        <p>1.MARGHERITA - Tomato sauce, cheese. $10,00 (Vegetarian) <button value="+" onclick="addItemMar()">Add to Cart</button> </p>
-        <p>2.HAWAIIAN - Tomato sauce, cheese, pinapple, ham. $12,00 <button onclick="addItemHaw()">Add to Cart</button> </p>
-        <p>3.VEGGIE - Tomato sauce, fresh spinach, sweetcorn, mixed peppers, red onions &amp; mushrooms. $15,00 <button onclick="addItemVeg()">Add to Cart</button></p>
-        <p>4.FUNGHI - Tomato sauce, cheese, mushrooms. $15,00 <button onclick="addItemFun()">Add to Cart</button> </p>
-        <p>5.SALAMI - Tomato sauce, cheese, double salami. $16,00 <button onclick="addItemSal()">Add to Cart</button> </p>
-        <p>6.CHICKEN SUPREME - Tomato sauce, cheese, chicken breast, mushrooms, red fresh peppers. $19,00 <button onclick="addItemChi()">Add to Cart</button> </p>
+        <p>1.MARGHERITA - Tomato sauce, cheese. $10,00 (Vegetarian) <button onclick="addItem('MARGHERITA')">Add to Cart</button> </p>
+        <p>2.HAWAIIAN - Tomato sauce, cheese, pinapple, ham. $12,00 <button onclick="addItem('HAWAIIAN')">Add to Cart</button> </p>
+        <p>3.VEGGIE - Tomato sauce, fresh spinach, sweetcorn, mixed peppers, red onions &amp; mushrooms. $15,00 <button onclick="addItem('VEGGIE')">Add to Cart</button></p>
+        <p>4.FUNGHI - Tomato sauce, cheese, mushrooms. $15,00 <button onclick="addItem('FUNGHI')">Add to Cart</button> </p>
+        <p>5.SALAMI - Tomato sauce, cheese, double salami. $16,00 <button onclick="addItem('SALAMI')">Add to Cart</button> </p>
+        <p>6.CHICKEN SUPREME - Tomato sauce, cheese, chicken breast, mushrooms, red fresh peppers. $19,00 <button onclick="addItem('CHICKEN SUPREME')">Add to Cart</button> </p>
     </div>
     <div id="order">
         <p>Cart</p>
@@ -30,15 +30,16 @@
                 <option id="current"> Current Order</option>
             </select>
         </form>
-        <p>Add Delivery? <button onclick="addDelivery()">Yes</button></p>
-        <form> <select id="price" size="10">
+        <p>Add Delivery? <button onclick="addDelivery()">Yes</button>
+        </p>
+        <form>
+            <select id="price" size="10">
                 <option>Unit Price $</option>
             </select>
-            <h2>Total: <span id="total"></span> <br>
+            <h2> <span id="total"> Total: </span> <span id="totalPrice"> 0 </span><br>
                 <button onclick="clearAll()">Clear All</button>
-
-                <div><button>Submit Order</button></div>
             </h2>
+            <input type=button onClick="location.href='./OrderApp.html'" value='Submit Order'>
         </form>
     </div>
 
