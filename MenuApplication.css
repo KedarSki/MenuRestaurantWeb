@@ -28,6 +28,13 @@ body {
     color: #f63126;
 }
 
+#submit {
+    color: darkgray;
+    text-align-last: center;
+    align-self: auto;
+    margin-top: 280px;
+}
+
 .footer {
     position: fixed;
     left: 0;
