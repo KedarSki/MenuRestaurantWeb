@@ -21,7 +21,7 @@ addDelivery = () => {
     totalPrice.innerHTML = "$" + (resultPrice + delivery);
 }
 
-function addItem(name) {
+addItem = (name) => {
     let add = document.getElementById("items");
     let option = document.createElement("option");
     let addPrice = document.getElementById("price");
